@@ -1,10 +1,10 @@
 # Captsone_Project
 
 
-Project: Auto-adjusting data processing per data conditioning
+##Project: Auto-adjusting data processing per data conditioning
 
 
-Project Members:
+##Project Members:
 
 Syed Abdul Hadi
 
