@@ -1,0 +1,1239 @@
+
+        <html>
+            <head>
+            <h1>Data Profiling Report</h1>
+            </head>
+            <body>
+                <h2>Recommendations</h2>
+                <ul>
+                    <li>There are 24 columns with missing values in the dataset. Review missing values table below to assess severity.</li>
+                    <li>92 rows are duplicated over all columns. There are 24 columns with duplicate values in the dataset. Review duplicates table below.</li>
+                    <li>There are 9 columns with free form text. Review free-form-text table below for handling decisions.</li>
+                    <li>There are 17 columns with datatype mismatch in the dataset. These columns have a datatype that is different from majority datatype of cell values. Review datatype mismatch table below.</li>
+                    <li>There are 18 columns with outliers in the dataset. For numeric columns this refers to numeric value, for non-numeric columns this refers to value length. Refer to misfielded values table for handling decision.</li>
+                    <li>There are 4 columns with potential misfielding/incorrect values in the dataset. Refer to misfielding tables below to verify these entries.</li>
+                <h2>Anomolous Conditions Detected</h2
+                </ul>
+                <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;"><h2 style="text-align:center;">Percentage of Missing Values</h2><div style="text-align:center;"><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="7fcc0101-d435-438a-bd08-4909cc772fb1" data-root-id="p6548" style="display: contents;"></div>
+  
+    <script type="application/json" id="p6670">
+      {"ba61efd2-7ae0-47b6-ab87-5b9f49d4023f":{"version":"3.1.0","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p6548","attributes":{"width":800,"x_range":{"type":"object","name":"DataRange1d","id":"p6550"},"y_range":{"type":"object","name":"FactorRange","id":"p6560","attributes":{"factors":["Unnamed: 23","Unnamed: 22","Unnamed: 21","Unnamed: 20","Unnamed: 19","Unnamed: 18","If \"Other,\" please indicate the currency here: ","If your income needs additional context, please provide it here:","If your job title needs additional context, please clarify here:","How much additional monetary compensation do you get, if any (for...","If you're in the U.S., what state do you work in?","What is your highest level of education completed?"]}},"x_scale":{"type":"object","name":"LinearScale","id":"p6562"},"y_scale":{"type":"object","name":"CategoricalScale","id":"p6564"},"title":{"type":"object","name":"Title","id":"p6551","attributes":{"text":"Percentage of Missing Values by Column"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p6600","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p6545","attributes":{"selected":{"type":"object","name":"Selection","id":"p6546","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p6547"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"FwAAABYAAAAVAAAAFAAAABMAAAASAAAACAAAAAkAAAAEAAAABgAAAAsAAAAPAAAA"},"shape":[12],"dtype":"int32","order":"little"}],["Column Name",{"type":"ndarray","array":["Unnamed: 23","Unnamed: 22","Unnamed: 21","Unnamed: 20","Unnamed: 19","Unnamed: 18","If \"Other,\" please indicate the currency here: ","If your income needs additional context, please provide it here:","If your job title needs additional context, please clarify here:","How much additional monetary compensation do you get, if any (for...","If you're in the U.S., what state do you work in?","What is your highest level of education completed?"],"shape":[12],"dtype":"object","order":"little"}],["Missing %",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAAAWUAAAAAAAABZQAAAAAAAAFlAAAAAAAAAWUAAAAAAAABZQAAAAAAAAFlABJAZbwXTWECnz1H+R0tWQI6y367MjFJAoDqTeQA0OkBfUc6/ChkyQNZ0eXNkd/E/"},"shape":[12],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p6601","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p6602"}}},"glyph":{"type":"object","name":"HBar","id":"p6597","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Missing %"},"line_color":{"type":"value","value":"#1f77b4"},"fill_color":{"type":"value","value":"#1f77b4"}}},"nonselection_glyph":{"type":"object","name":"HBar","id":"p6598","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Missing %"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"HBar","id":"p6599","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Missing %"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p6557","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p6579"},{"type":"object","name":"WheelZoomTool","id":"p6580"},{"type":"object","name":"BoxZoomTool","id":"p6581","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p6582","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p6583"},{"type":"object","name":"ResetTool","id":"p6584"},{"type":"object","name":"HelpTool","id":"p6585"}]}},"left":[{"type":"object","name":"CategoricalAxis","id":"p6573","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p6574"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p6576"},"axis_label":"Column Name","major_label_policy":{"type":"object","name":"AllLabels","id":"p6575"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p6566","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p6567","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p6569"},"axis_label":"% Missing","major_label_policy":{"type":"object","name":"AllLabels","id":"p6568"}}}],"center":[{"type":"object","name":"Grid","id":"p6572","attributes":{"axis":{"id":"p6566"}}},{"type":"object","name":"Grid","id":"p6578","attributes":{"dimension":1,"axis":{"id":"p6573"}}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p6670').textContent;
+              const render_items = [{"docid":"ba61efd2-7ae0-47b6-ab87-5b9f49d4023f","roots":{"p6548":"7fcc0101-d435-438a-bd08-4909cc772fb1"},"root_ids":["p6548"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html></div><br><div style="text-align:center;"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Column Name</th>
+      <th>Missing %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>23</th>
+      <td>Unnamed: 23</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Unnamed: 22</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Unnamed: 21</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Unnamed: 20</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Unnamed: 19</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Unnamed: 18</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>If "Other," please indicate the currency here:</td>
+      <td>99.297207</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>If your income needs additional context, please provide it here:</td>
+      <td>89.176269</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>If your job title needs additional context, please clarify here:</td>
+      <td>74.199993</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>How much additional monetary compensation do you get, if any (for...</td>
+      <td>26.203132</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>If you're in the U.S., what state do you work in?</td>
+      <td>18.097820</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>What is your highest level of education completed?</td>
+      <td>1.091649</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>What is your race? (Choose all that apply.)</td>
+      <td>0.931112</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>What is your gender?</td>
+      <td>0.923977</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>What city do you work in?</td>
+      <td>0.599336</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>What industry do you work in?</td>
+      <td>0.588634</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>How many years of professional work experience do you have in you...</td>
+      <td>0.331776</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>How many years of professional work experience do you have overal...</td>
+      <td>0.331776</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>How old are you?</td>
+      <td>0.331776</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>What country do you work in?</td>
+      <td>0.331776</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Please indicate the currency</td>
+      <td>0.331776</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>What is your annual salary? (You'll indicate the currency in a la...</td>
+      <td>0.331776</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Job title</td>
+      <td>0.331776</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Timestamp</td>
+      <td>0.331776</td>
+    </tr>
+  </tbody>
+</table></div></div>
+                <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;"><h2 style="text-align:center;">Duplicates</h2><p style="text-align:center;">Provided dataset has 92 duplicate rows.</p><div style="text-align:center;"><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="95d9e1e1-0d90-4dc3-b79a-2929e9e3dd70" data-root-id="p6674" style="display: contents;"></div>
+  
+    <script type="application/json" id="p6796">
+      {"afef3413-7cdd-427d-a2c3-fa18a9b88c32":{"version":"3.1.0","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p6674","attributes":{"width":800,"x_range":{"type":"object","name":"DataRange1d","id":"p6676"},"y_range":{"type":"object","name":"FactorRange","id":"p6686","attributes":{"factors":["Unnamed: 23","Unnamed: 21","Unnamed: 18","Unnamed: 20","Unnamed: 19","Unnamed: 22","What is your gender?","What is your highest level of education completed?","How old are you?","How many years of professional work experience do you have overal...","How many years of professional work experience do you have in you...","Please indicate the currency"]}},"x_scale":{"type":"object","name":"LinearScale","id":"p6688"},"y_scale":{"type":"object","name":"CategoricalScale","id":"p6690"},"title":{"type":"object","name":"Title","id":"p6677","attributes":{"text":"Percentage of Duplicates by Column"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p6726","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p6671","attributes":{"selected":{"type":"object","name":"Selection","id":"p6672","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p6673"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"FwAAABUAAAASAAAAFAAAABMAAAAWAAAAEAAAAA8AAAABAAAADQAAAA4AAAAHAAAA"},"shape":[12],"dtype":"int32","order":"little"}],["Column Name",{"type":"ndarray","array":["Unnamed: 23","Unnamed: 21","Unnamed: 18","Unnamed: 20","Unnamed: 19","Unnamed: 22","What is your gender?","What is your highest level of education completed?","How old are you?","How many years of professional work experience do you have overal...","How many years of professional work experience do you have in you...","Please indicate the currency"],"shape":[12],"dtype":"object","order":"little"}],["Duplicate Percentage",{"type":"ndarray","array":{"type":"bytes","data":"KL3ojMX/WEAoveiMxf9YQCi96IzF/1hAKL3ojMX/WEAoveiMxf9YQCi96IzF/1hA8m50TaH+WEAaLF3aZv5YQEPpRWcs/lhAa6Yu9PH9WEBrpi708f1YQOPd6JpC/VhA"},"shape":[12],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p6727","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p6728"}}},"glyph":{"type":"object","name":"HBar","id":"p6723","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Duplicate Percentage"},"line_color":{"type":"value","value":"#1f77b4"},"fill_color":{"type":"value","value":"#1f77b4"}}},"nonselection_glyph":{"type":"object","name":"HBar","id":"p6724","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Duplicate Percentage"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"HBar","id":"p6725","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Duplicate Percentage"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p6683","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p6705"},{"type":"object","name":"WheelZoomTool","id":"p6706"},{"type":"object","name":"BoxZoomTool","id":"p6707","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p6708","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p6709"},{"type":"object","name":"ResetTool","id":"p6710"},{"type":"object","name":"HelpTool","id":"p6711"}]}},"left":[{"type":"object","name":"CategoricalAxis","id":"p6699","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p6700"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p6702"},"axis_label":"Column Name","major_label_policy":{"type":"object","name":"AllLabels","id":"p6701"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p6692","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p6693","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p6695"},"axis_label":"% Duplicates","major_label_policy":{"type":"object","name":"AllLabels","id":"p6694"}}}],"center":[{"type":"object","name":"Grid","id":"p6698","attributes":{"axis":{"id":"p6692"}}},{"type":"object","name":"Grid","id":"p6704","attributes":{"dimension":1,"axis":{"id":"p6699"}}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p6796').textContent;
+              const render_items = [{"docid":"afef3413-7cdd-427d-a2c3-fa18a9b88c32","roots":{"p6674":"95d9e1e1-0d90-4dc3-b79a-2929e9e3dd70"},"root_ids":["p6674"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html></div><br><div style="text-align:center;"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Column Name</th>
+      <th>Duplicate Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>23</th>
+      <td>Unnamed: 23</td>
+      <td>99.996433</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Unnamed: 21</td>
+      <td>99.996433</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Unnamed: 18</td>
+      <td>99.996433</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Unnamed: 20</td>
+      <td>99.996433</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Unnamed: 19</td>
+      <td>99.996433</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Unnamed: 22</td>
+      <td>99.996433</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>What is your gender?</td>
+      <td>99.978595</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>What is your highest level of education completed?</td>
+      <td>99.975028</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>How old are you?</td>
+      <td>99.971460</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>How many years of professional work experience do you have overal...</td>
+      <td>99.967893</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>How many years of professional work experience do you have in you...</td>
+      <td>99.967893</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Please indicate the currency</td>
+      <td>99.957190</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>What is your race? (Choose all that apply.)</td>
+      <td>99.825194</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>If "Other," please indicate the currency here:</td>
+      <td>99.589740</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>If you're in the U.S., what state do you work in?</td>
+      <td>99.529093</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>What country do you work in?</td>
+      <td>98.683600</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>How much additional monetary compensation do you get, if any (for...</td>
+      <td>96.989048</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>What industry do you work in?</td>
+      <td>95.683351</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>If your income needs additional context, please provide it here:</td>
+      <td>89.397453</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>What is your annual salary? (You'll indicate the currency in a la...</td>
+      <td>84.713353</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>What city do you work in?</td>
+      <td>82.883236</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>If your job title needs additional context, please clarify here:</td>
+      <td>75.127537</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Job title</td>
+      <td>49.024295</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Timestamp</td>
+      <td>10.256502</td>
+    </tr>
+  </tbody>
+</table></div></div>
+                <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;"><h2 style="text-align:center;">Free Form Text in Dataset</h2><div style="text-align:center;"><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="72a3955d-0ab7-47bb-8e81-818e14c38ad9" data-root-id="p6800" style="display: contents;"></div>
+  
+    <script type="application/json" id="p6922">
+      {"01916dfb-f0f3-4c2f-8c86-f5c41014a5f5":{"version":"3.1.0","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p6800","attributes":{"width":800,"x_range":{"type":"object","name":"DataRange1d","id":"p6802"},"y_range":{"type":"object","name":"FactorRange","id":"p6812","attributes":{"factors":["If your job title needs additional context, please clarify here:","If your income needs additional context, please provide it here:","What is your race? (Choose all that apply.)","Job title","What city do you work in?","What industry do you work in?","What country do you work in?","If \"Other,\" please indicate the currency here: ","If you're in the U.S., what state do you work in?","What is your gender?","Unnamed: 22","Unnamed: 21"]}},"x_scale":{"type":"object","name":"LinearScale","id":"p6814"},"y_scale":{"type":"object","name":"CategoricalScale","id":"p6816"},"title":{"type":"object","name":"Title","id":"p6803","attributes":{"text":"Percentage of Rows with Free-form Text by Column"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p6852","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p6797","attributes":{"selected":{"type":"object","name":"Selection","id":"p6798","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p6799"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"BAAAAAkAAAARAAAAAwAAAAwAAAACAAAACgAAAAgAAAALAAAAEAAAABYAAAAVAAAA"},"shape":[12],"dtype":"int32","order":"little"}],["Column Name",{"type":"ndarray","array":["If your job title needs additional context, please clarify here:","If your income needs additional context, please provide it here:","What is your race? (Choose all that apply.)","Job title","What city do you work in?","What industry do you work in?","What country do you work in?","If \"Other,\" please indicate the currency here: ","If you're in the U.S., what state do you work in?","What is your gender?","Unnamed: 22","Unnamed: 21"],"shape":[12],"dtype":"object","order":"little"}],["Percentage of Rows with Free-form Text",{"type":"ndarray","array":{"type":"bytes","data":"mpmZmZkZIkAK16NwPQoZQI/C9ShcjwhAKVyPwvUo3D/D9Shcj8LFP5qZmZmZmbk/exSuR+F6pD97FK5H4XqUP3sUrkfhepQ/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"},"shape":[12],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p6853","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p6854"}}},"glyph":{"type":"object","name":"HBar","id":"p6849","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Percentage of Rows with Free-form Text"},"line_color":{"type":"value","value":"#1f77b4"},"fill_color":{"type":"value","value":"#1f77b4"}}},"nonselection_glyph":{"type":"object","name":"HBar","id":"p6850","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Percentage of Rows with Free-form Text"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"HBar","id":"p6851","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Percentage of Rows with Free-form Text"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p6809","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p6831"},{"type":"object","name":"WheelZoomTool","id":"p6832"},{"type":"object","name":"BoxZoomTool","id":"p6833","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p6834","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p6835"},{"type":"object","name":"ResetTool","id":"p6836"},{"type":"object","name":"HelpTool","id":"p6837"}]}},"left":[{"type":"object","name":"CategoricalAxis","id":"p6825","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p6826"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p6828"},"axis_label":"Column Name","major_label_policy":{"type":"object","name":"AllLabels","id":"p6827"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p6818","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p6819","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p6821"},"axis_label":"% Rows with Free-form Text","major_label_policy":{"type":"object","name":"AllLabels","id":"p6820"}}}],"center":[{"type":"object","name":"Grid","id":"p6824","attributes":{"axis":{"id":"p6818"}}},{"type":"object","name":"Grid","id":"p6830","attributes":{"dimension":1,"axis":{"id":"p6825"}}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p6922').textContent;
+              const render_items = [{"docid":"01916dfb-f0f3-4c2f-8c86-f5c41014a5f5","roots":{"p6800":"72a3955d-0ab7-47bb-8e81-818e14c38ad9"},"root_ids":["p6800"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html></div><br><div style="text-align:center;"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Column Name</th>
+      <th>Percentage of Rows with Free-form Text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>4</th>
+      <td>If your job title needs additional context, please clarify here:</td>
+      <td>9.05</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>If your income needs additional context, please provide it here:</td>
+      <td>6.26</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>What is your race? (Choose all that apply.)</td>
+      <td>3.07</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Job title</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>What city do you work in?</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>What industry do you work in?</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>What country do you work in?</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>If "Other," please indicate the currency here:</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>If you're in the U.S., what state do you work in?</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>What is your gender?</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Unnamed: 22</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Unnamed: 21</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Unnamed: 20</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Unnamed: 19</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Unnamed: 18</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Timestamp</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>What is your highest level of education completed?</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>How many years of professional work experience do you have in you...</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>How many years of professional work experience do you have overal...</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>How old are you?</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Please indicate the currency</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>How much additional monetary compensation do you get, if any (for...</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>What is your annual salary? (You'll indicate the currency in a la...</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Unnamed: 23</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table></div></div>
+                <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;"><h2 style="text-align:center;">Datatype Mismatch in Dataset</h2><div style="text-align:center;"><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="c8131df2-d711-4a6d-bb13-0647326f3065" data-root-id="p6926" style="display: contents;"></div>
+  
+    <script type="application/json" id="p7048">
+      {"eeb23e90-fd7e-468b-a792-28ddaea006ca":{"version":"3.1.0","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p6926","attributes":{"width":800,"x_range":{"type":"object","name":"DataRange1d","id":"p6928"},"y_range":{"type":"object","name":"FactorRange","id":"p6938","attributes":{"factors":["Timestamp","Job title","What is your annual salary? (You'll indicate the currency in a la...","Please indicate the currency","How many years of professional work experience do you have in you...","How old are you?","What country do you work in?","How many years of professional work experience do you have overal...","What industry do you work in?","What city do you work in?","What is your gender?","What is your race? (Choose all that apply.)"]}},"x_scale":{"type":"object","name":"LinearScale","id":"p6940"},"y_scale":{"type":"object","name":"CategoricalScale","id":"p6942"},"title":{"type":"object","name":"Title","id":"p6929","attributes":{"text":"Percentage of Rows with Datatype Mismatch by Column"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p6978","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p6923","attributes":{"selected":{"type":"object","name":"Selection","id":"p6924","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p6925"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAMAAAAFAAAABgAAAA0AAAABAAAACQAAAAwAAAACAAAACwAAAA8AAAAQAAAA"},"shape":[12],"dtype":"int32","order":"little"}],["Column Name",{"type":"ndarray","array":["Timestamp","Job title","What is your annual salary? (You'll indicate the currency in a la...","Please indicate the currency","How many years of professional work experience do you have in you...","How old are you?","What country do you work in?","How many years of professional work experience do you have overal...","What industry do you work in?","What city do you work in?","What is your gender?","What is your race? (Choose all that apply.)"],"shape":[12],"dtype":"object","order":"little"}],["Percentage of Recommended Cells",{"type":"ndarray","array":{"type":"bytes","data":"exSuR+HqWEB7FK5H4epYQHsUrkfh6lhAexSuR+HqWEB7FK5H4epYQHsUrkfh6lhAexSuR+HqWEB7FK5H4epYQArXo3A92lhAmpmZmZnZWECF61G4HsVYQBSuR+F6xFhA"},"shape":[12],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p6979","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p6980"}}},"glyph":{"type":"object","name":"HBar","id":"p6975","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Percentage of Recommended Cells"},"line_color":{"type":"value","value":"#1f77b4"},"fill_color":{"type":"value","value":"#1f77b4"}}},"nonselection_glyph":{"type":"object","name":"HBar","id":"p6976","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Percentage of Recommended Cells"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"HBar","id":"p6977","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Percentage of Recommended Cells"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p6935","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p6957"},{"type":"object","name":"WheelZoomTool","id":"p6958"},{"type":"object","name":"BoxZoomTool","id":"p6959","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p6960","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p6961"},{"type":"object","name":"ResetTool","id":"p6962"},{"type":"object","name":"HelpTool","id":"p6963"}]}},"left":[{"type":"object","name":"CategoricalAxis","id":"p6951","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p6952"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p6954"},"axis_label":"Column Name","major_label_policy":{"type":"object","name":"AllLabels","id":"p6953"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p6944","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p6945","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p6947"},"axis_label":"% Rows with Datatype Mismatch","major_label_policy":{"type":"object","name":"AllLabels","id":"p6946"}}}],"center":[{"type":"object","name":"Grid","id":"p6950","attributes":{"axis":{"id":"p6944"}}},{"type":"object","name":"Grid","id":"p6956","attributes":{"dimension":1,"axis":{"id":"p6951"}}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p7048').textContent;
+              const render_items = [{"docid":"eeb23e90-fd7e-468b-a792-28ddaea006ca","roots":{"p6926":"c8131df2-d711-4a6d-bb13-0647326f3065"},"root_ids":["p6926"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html></div><br><div style="text-align:center;"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Column Name</th>
+      <th>Column Datatype</th>
+      <th>Recommended Datatype</th>
+      <th>Percentage of Recommended Cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Timestamp</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.67</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Job title</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.67</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>What is your annual salary? (You'll indicate the currency in a la...</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.67</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Please indicate the currency</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.67</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>How many years of professional work experience do you have in you...</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.67</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>How old are you?</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.67</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>What country do you work in?</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.67</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>How many years of professional work experience do you have overal...</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.67</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>What industry do you work in?</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.41</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>What city do you work in?</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.40</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>What is your gender?</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.08</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>What is your race? (Choose all that apply.)</td>
+      <td>object</td>
+      <td>str</td>
+      <td>99.07</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>What is your highest level of education completed?</td>
+      <td>object</td>
+      <td>str</td>
+      <td>98.91</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>If you're in the U.S., what state do you work in?</td>
+      <td>object</td>
+      <td>str</td>
+      <td>81.90</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>If your job title needs additional context, please clarify here:</td>
+      <td>object</td>
+      <td>str</td>
+      <td>25.80</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>If your income needs additional context, please provide it here:</td>
+      <td>object</td>
+      <td>str</td>
+      <td>10.82</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>If "Other," please indicate the currency here:</td>
+      <td>object</td>
+      <td>str</td>
+      <td>0.70</td>
+    </tr>
+  </tbody>
+</table></div></div>
+                <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;"><h2 style="text-align:center;">Percentage of Rows With Outliers</h2><div style="text-align:center;"><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="47010581-a1a1-4554-9340-41ee2ad0cdc5" data-root-id="p7052" style="display: contents;"></div>
+  
+    <script type="application/json" id="p7174">
+      {"f1635bff-e8fd-4489-af96-583553071718":{"version":"3.1.0","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p7052","attributes":{"width":800,"x_range":{"type":"object","name":"DataRange1d","id":"p7054"},"y_range":{"type":"object","name":"FactorRange","id":"p7064","attributes":{"factors":["What is your highest level of education completed?","What is your race? (Choose all that apply.)","Please indicate the currency","If your job title needs additional context, please clarify here:","If your income needs additional context, please provide it here:","What city do you work in?","What is your gender?","What is your annual salary? (You'll indicate the currency in a la...","Job title","How old are you?","How many years of professional work experience do you have overal...","How many years of professional work experience do you have in you..."]}},"x_scale":{"type":"object","name":"LinearScale","id":"p7066"},"y_scale":{"type":"object","name":"CategoricalScale","id":"p7068"},"title":{"type":"object","name":"Title","id":"p7055","attributes":{"text":"Percentage of Rows with Outliers"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p7104","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p7049","attributes":{"selected":{"type":"object","name":"Selection","id":"p7050","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p7051"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"DwAAABEAAAAHAAAABAAAAAkAAAAMAAAAEAAAAAUAAAADAAAAAQAAAA0AAAAOAAAA"},"shape":[12],"dtype":"int32","order":"little"}],["Column Name",{"type":"ndarray","array":["What is your highest level of education completed?","What is your race? (Choose all that apply.)","Please indicate the currency","If your job title needs additional context, please clarify here:","If your income needs additional context, please provide it here:","What city do you work in?","What is your gender?","What is your annual salary? (You'll indicate the currency in a la...","Job title","How old are you?","How many years of professional work experience do you have overal...","How many years of professional work experience do you have in you..."],"shape":[12],"dtype":"object","order":"little"}],["Percentage of Outliers",{"type":"ndarray","array":{"type":"bytes","data":"dNRffaAlqD8iI4dNqWqfP0yOXQTe9pc//D0D45nSlD/UhiueJ/KTP0yssmx+k4Y/02jWNYdVhT8lT9pg7YiBP56wCwCFY4E/I18xHuqjfD/gLR9W1i1rP+AtH1bWLWs/"},"shape":[12],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p7105","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p7106"}}},"glyph":{"type":"object","name":"HBar","id":"p7101","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Percentage of Outliers"},"line_color":{"type":"value","value":"#1f77b4"},"fill_color":{"type":"value","value":"#1f77b4"}}},"nonselection_glyph":{"type":"object","name":"HBar","id":"p7102","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Percentage of Outliers"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"HBar","id":"p7103","attributes":{"y":{"type":"field","field":"Column Name"},"height":{"type":"value","value":0.5},"right":{"type":"field","field":"Percentage of Outliers"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p7061","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p7083"},{"type":"object","name":"WheelZoomTool","id":"p7084"},{"type":"object","name":"BoxZoomTool","id":"p7085","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p7086","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p7087"},{"type":"object","name":"ResetTool","id":"p7088"},{"type":"object","name":"HelpTool","id":"p7089"}]}},"left":[{"type":"object","name":"CategoricalAxis","id":"p7077","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p7078"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p7080"},"axis_label":"Column Name","major_label_policy":{"type":"object","name":"AllLabels","id":"p7079"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p7070","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p7071","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p7073"},"axis_label":"% Percentage of Outliers","major_label_policy":{"type":"object","name":"AllLabels","id":"p7072"}}}],"center":[{"type":"object","name":"Grid","id":"p7076","attributes":{"axis":{"id":"p7070"}}},{"type":"object","name":"Grid","id":"p7082","attributes":{"dimension":1,"axis":{"id":"p7077"}}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p7174').textContent;
+              const render_items = [{"docid":"f1635bff-e8fd-4489-af96-583553071718","roots":{"p7052":"47010581-a1a1-4554-9340-41ee2ad0cdc5"},"root_ids":["p7052"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html></div><br><div style="text-align:center;"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Column Name</th>
+      <th>Percentage of Outliers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>15</th>
+      <td>What is your highest level of education completed?</td>
+      <td>0.047162</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>What is your race? (Choose all that apply.)</td>
+      <td>0.030680</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Please indicate the currency</td>
+      <td>0.023403</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>If your job title needs additional context, please clarify here:</td>
+      <td>0.020335</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>If your income needs additional context, please provide it here:</td>
+      <td>0.019478</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>What city do you work in?</td>
+      <td>0.011024</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>What is your gender?</td>
+      <td>0.010417</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>What is your annual salary? (You'll indicate the currency in a la...</td>
+      <td>0.008562</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Job title</td>
+      <td>0.008491</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>How old are you?</td>
+      <td>0.006992</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>How many years of professional work experience do you have overal...</td>
+      <td>0.003318</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>How many years of professional work experience do you have in you...</td>
+      <td>0.003318</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Timestamp</td>
+      <td>0.003318</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>What country do you work in?</td>
+      <td>0.002604</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>If "Other," please indicate the currency here:</td>
+      <td>0.001891</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>If you're in the U.S., what state do you work in?</td>
+      <td>0.001748</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>What industry do you work in?</td>
+      <td>0.001249</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>How much additional monetary compensation do you get, if any (for...</td>
+      <td>0.000036</td>
+    </tr>
+  </tbody>
+</table></div></div>
+                <div style="text-align:center;"><h2 style="text-align:center;">Potentially Misfielded Values</h2>There are 11 columns with potentially misfielded values:
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Timestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5/1/2021 0:01:23</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5/1/2021 0:03:47</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>5/1/2021 0:05:57</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>5/1/2021 0:07:13</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>What industry do you work in?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Library (its a non-profit and its a govt job - how would I list that? Not all libraries are govt jobs)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Public Library (might be considered Government, but that always seems an odd designation...)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Language Services company, unsure the broad category to use. Our clients are branding agencies, and their clients are frequently (but not always) pharmaceutical companies.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Hybrid Nonprofit Higher Education (we are part of a university but our entire budget comes from grants)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Job title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Solutions Control Specialist (Chemist)/Wastewater Pretreatment Facility Chief Operator</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Associate Vice President of Advancement Administration &amp; Chief Annual Giving Officer</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>No official title. Do whatever needs to be done- i was hired as a bookeeper, now do estimatinf, projext management, schedulong</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>If your job title needs additional context, please clarify here:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Surface level, I perform the basic duties of a senior-level sales associate in a small boutique.  Due to COVID, along with the owner's tragic and early passing in August of 2020 (she had been in and out of the store for two years and eventually the breast cancer killed her) our now bare-bones team delegates all the extra tasks.  I am considered to be a marketing coordinator for the team, but I want to preface that with the explanation that it's not a traditional version of the role, nor is it paid as such.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Senior Consultant is the standard title for newly minted MBAs or holders of other graduate degrees at my firm. You can become an SC by starting as an analyst and working your way up for 4-5 years, but most people either come in with an MBA or leave to get one and then come back, because it's hard to get to manager level without one. As an SC, I am responsible for managing a workstream (usually yourself and a few analysts) as part of a larger project. I don't do any business development.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>I help students with internships, job shadowing, plan structured field trips.  I also help students with their after high school plans and provide some services on campus or connect them to services. I do career assessments and interpretations, un-muddle job applications (why, why, WHY must you complete both a resume AND fill out the job experience?  And WHY are you asking for resumes for part-time, entry-level, seasonal work advertised for high school students?).  I'm part of the School Counseling team (NOT GUIDANCE COUNSELING!!!!) and my "other duties as assigned" typically involves some graphic design, subbing, social/emotional support (not services- I'm a friendly face not a counselor), testing, event planning, college essay proof-reader, and, in a pinch, IT support.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>The role is fairly nebulous because it fits the needs of the unit or department. Essentially I am the assistant manager with all functions of a manager, but don't have authority over hiring decisions, termination decisions, and can't do significant disciplinary action where termination is a result. In my role I manage team member scheduling, attendance, quality and safety reporting, I create education for the team, I manage compliance with education, I also manage quality improvement and evidence based practice projects, I also teach classes for our team. This is all with the expectation that I work as a charge nurse for a set amount of my hours. For some they have a 2/3rds of their time is working floor and 1/3rd indirect. This is dependant on the manager of the unit and their needs for the role.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>What is your annual salary? (You'll indicate the currency in a later question. If you are part-time or hourly, please enter an annualized equivalent -- what you would earn if you worked the job 40 hours a week, 52 weeks a year.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>58</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>35</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>38</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>61</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>If "Other," please indicate the currency here:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>I work for an online state university, managing admissions data. Not direct tech support.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AUD and NZD aren't the same currency, and have absolutely nothing to do with each other :(</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Many non-salary benefits - travel, free healthcare for self, very low for family, non-taxable housing allowance</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>additional compensation is for overtime (i am paid hourly) so it varies. i have included an estimate</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>If your income needs additional context, please provide it here:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Actual work is 60+ hours weekly (5x 12 hour shifts per week), over 3000 hours annually, not the 2080 annual hours for a 40-hour job. Paid entirely on commission (38% of fare after flag drop + tips, typically 10-20% of fare) and bonuses from associated businesses (liquor stores, clubs, massage places, etc. all pay drivers to bring passengers to them) of approximately $9000/year.  \n\n1 week paid vacation after 1 year with the company. 1 week per year after that up to 4 weeks. A minority of drivers stay in the job that long. Barely affordable health insurance, none before ACA.\n\nThat was my last year of income, 2019. My income had fallen more than 25% per year for last 3 years thanks to rideshare services dumping their service into the market for below-cost prices.\n\nI have been unemployed since COVID shut down tourism. All of these answers are for 2019, the last full year I was employed.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>I work part-time, about 0.5 FTE (20 hrs/wk). When I took the role, it was offered that I could also work 0.5 FTE in another office to get up to 1.0 FTE, but I declined. My boss has repeatedly offered me 1.0 FTE in my office, and I have repeatedly declined, as I am also taking university classes part time and because I would find this job too stressful at 1.0 FTE. I also work the minimum number of hours required to access health benefits, paid vacation, pension, etc. I get 3 weeks of paid vacation each year, plus an additional ~2 weeks off at Christmas. I frequently work a bit over my set hours each week, but we are told not to record the time (I know!) and just take it off as lieu time later, which I try to keep on top of. There is some expectation that I am "on call" and able to respond to texts in off hours, but I make sure to record any time that I spend on this outside of my regular hours.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>My bonus pay is an essential part of my remuneration, and not optional. We must earn minimum 100% of our allotted incentive quota in each financial quarter, and this amount can range up to 200%, depending on your performance, and role. \n\nSo as a rule, I would definitely be earning at least Rs.90,00 (Approx.) every quarter, with this amount going up to Rs.180,000 depending on my performance. \n\nThere are clear numerical performance parameters set in place to measure 100% performance from each employee, so there's no negotiation involved. You know what you'll get, based on your pre-set KPIs. \n\nIt's an unusual system of compensation and makes it difficult to explain to other employers that my actual, set income is in fact Rs.1,800,000 and not Rs.1,400,000.\n\nIn fact, I was planning to write in to you with a letter later this week, because I've been wondering how to explain this to potential employers without sounding like a scammer! In India the practice of asking for previous salary and basing offers on that is still the norm, so the usual advice of "don't disclose your previous income" does not apply to my situation, I'm afraid.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Also provided with my housing, utilities, cable and internet. Pays for all my gas and a lot of repair on my vehicle which I use some for work. As it is a horse farm, when there is a horse I want and can ride I am able to do that. I am able to use the farm truck and horse trailer to haul to go places to ride. The farm also owns the majority of the tack that I use when riding. I am allowed pets. Because my employer also owns another company I have health insurance that they pay a small portion of and a retirement account that they match up to 3%. Some may not sound like a big deal in the corporate environment but for the horse business it’s not bad. Some of my bonus money is based on horses successfully having babies and then how many horses I get pregnant for the next year. This can really fluctuate depending on not only Mother Nature but the goals of the farm. In years past we had 15-20 babies a year. Right now we are at 4-6.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>What country do you work in?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>We don't get raises, we get quarterly bonuses, but they periodically asses income in the area you work, so I got a raise because a 3rd party assessment showed I was paid too little for the area we were located</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>United States (I work from home and my clients are all over the US/Canada/PR</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>I earn commission on sales. If I meet quota, I'm guaranteed another 16k min. Last year i earned an additional 27k. It's not uncommon for people in my space to earn 100k+ after commission.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>I was brought in on this salary to help with the EHR and very quickly was promoted to current position but compensation was not altered.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>If you're in the U.S., what state do you work in?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Arkansas, Idaho, Kansas, Louisiana, Michigan, Mississippi, Nevada, New York, South Carolina, Tennessee, Washington</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Arkansas, Idaho, Kansas, Louisiana, Michigan, Mississippi, Nevada, New York, South Carolina, Tennessee, Washington</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>California, District of Columbia, Illinois, Iowa, Maryland, Minnesota</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>California, Illinois, Massachusetts, North Carolina, South Carolina, Virginia</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>What city do you work in?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Work remotely, but the company is based out of Chicago, IL and I work in Newark, NJ</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>In various cities. I work on projects through my employer for various financial organisations in the field of compliance &amp; risk. My new project will be based in Amsterdam.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>What is your race? (Choose all that apply.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Hispanic, Latino, or Spanish origin, Native American or Alaska Native, Another option not listed here or prefer not to answer</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Asian or Asian American, Hispanic, Latino, or Spanish origin, Another option not listed here or prefer not to answer</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Asian or Asian American, Hispanic, Latino, or Spanish origin, White, Another option not listed here or prefer not to answer</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+            </body>
+        </html>
+    
