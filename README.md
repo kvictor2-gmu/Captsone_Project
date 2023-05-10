@@ -15,6 +15,7 @@ When working on any project which involves working extensively with data, the pr
 •	Now you can see the output as a html, showing all the anomalies and providing recommendations.
 
 ## Project Members:
+•Tuan Nguyen\
 •Syed Abdul Hadi\
 •Srija Reddy Kallu\
 •Leela Sai Charan Reddy Manchala\
