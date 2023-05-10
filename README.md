@@ -12,11 +12,11 @@ When working on any project which involves working extensively with data, the pr
 •	Download any csv, excel or image files.\
 •	Download the Data_Profiling_Complete.ipynb file.\
 •	Run the Data_Profiling_Complete.ipynb file while providing the input as the data you initially downloaded.\
-•	Now you can see the output as a html, showing all the anomalies and providing recommendations.\
+•	Now you can see the output as a html, showing all the anomalies and providing recommendations.
 
 ## Project Members:
 •Syed Abdul Hadi\
 •Srija Reddy Kallu\
 •Leela Sai Charan Reddy Manchala\
 •Kanaparthy John Victor\
-•Lakshmiah Sabitha Boyini\
+•Lakshmiah Sabitha Boyini
